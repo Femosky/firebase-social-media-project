@@ -6,6 +6,10 @@ import { Login } from './pages/login';
 import { Navbar } from './components/navbar';
 import { CreatePost } from './pages/create-post/create-post';
 
+/*
+    Doing this to test pushing to git
+*/
+
 function App() {
     return (
         <div className='App'>
