@@ -126,3 +126,35 @@ textarea {
     transform: scale(0.98);
     box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
 }
+
+.container-posts {
+    display: flex;
+    justify-content: center;
+}
+
+.posts {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    justify-self: center;
+    gap: 1rem;
+    margin-block-start: 1rem;
+    /* border: 1px solid red; */
+}
+
+.post {
+    border: 1px solid green;
+}
+
+.post .footer {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+}
+
+.post .footer button {
+    width: fit-content;
+    height: fit-content;
+}

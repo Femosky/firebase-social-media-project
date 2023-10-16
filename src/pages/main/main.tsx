@@ -25,10 +25,12 @@ export function Main() {
     }, []);
 
     return (
-        <div>
-            {postsList?.map((post) => (
-                <Post post={post} />
-            ))}
+        <div className='container-posts'>
+            <div className='posts'>
+                {postsList?.map((post) => (
+                    <Post post={post} />
+                ))}
+            </div>
         </div>
     );
 }

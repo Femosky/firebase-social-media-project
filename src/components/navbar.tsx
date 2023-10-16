@@ -2,6 +2,8 @@ import { Link } from 'react-router-dom';
 import { auth } from '../config/firebase';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { signOut } from 'firebase/auth';
+import { useEffect } from 'react';
+import { provider } from '../config/firebase';
 
 export function Navbar() {
     const [user] = useAuthState(auth);
@@ -9,6 +11,17 @@ export function Navbar() {
     const signUserOut = async () => {
         await signOut(auth);
     };
+
+    function isUserPickerActive() {
+        if (!user) {
+            provider.setCustomParameters({
+                prompt: 'select_account',
+            });
+        }
+    }
+    useEffect(() => {
+        isUserPickerActive();
+    }, []);
 
     return (
         <div className='navbar'>
