@@ -1,5 +1,17 @@
 Deployed app: https://fir-project-pedrotech.web.app/
 
+This app was a project I worked on as part of an 8 hour React course I took on YouTube by PedroTech.
+
+It's a social media app that can allow users to:
+
+1.  Sign in
+2.  Sign out
+3.  Create Posts
+4.  Like Posts
+5.  Unlike posts
+
+This was made possible using TypeScript and Google's Firebase for the backend management. Feel free to check it out!
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
