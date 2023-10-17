@@ -139,7 +139,7 @@ textarea {
     /* justify-content: center; */
     justify-self: center;
     gap: 1rem;
-    margin-block-start: 1rem;
+    margin-block: 1rem;
     /* border: 1px solid red; */
 }
 
